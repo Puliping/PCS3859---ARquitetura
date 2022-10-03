@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
-public class ARcursor : MonoBehaviour
+public class ARCursor : MonoBehaviour
 {
     public GameObject child;
     public GameObject model;
