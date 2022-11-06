@@ -16,9 +16,10 @@ public class ObjectSelector : MonoBehaviour
     public GameObject chair;
     public GameObject stove;
     public GameObject fridge;
-
+    private GameObject selected;
     void Start()
     {
+        Chair(); // REMOVE THIS LATER
         up = Vector3.up * speed;
         down = Vector3.down * speed;
     }
@@ -28,11 +29,11 @@ public class ObjectSelector : MonoBehaviour
     {
         if (movingup)
         {
-            this.transform.Rotate(up);
+            selected.transform.Rotate(up);
         }
         else if (movingdown)
         {
-            this.transform.Rotate(down);
+            selected.transform.Rotate(down);
         }
     }
 
@@ -61,6 +62,7 @@ public class ObjectSelector : MonoBehaviour
         chair.SetActive(true);
         stove.SetActive(false);
         fridge.SetActive(false);
+        selected = chair;
 }
 
 
@@ -69,6 +71,7 @@ public class ObjectSelector : MonoBehaviour
         chair.SetActive(false);
         stove.SetActive(true);
         fridge.SetActive(false);
+        selected = stove;
     }
 
 
@@ -77,6 +80,7 @@ public class ObjectSelector : MonoBehaviour
         chair.SetActive(false);
         stove.SetActive(false);
         fridge.SetActive(true);
+        selected = fridge;
     }
 
 }

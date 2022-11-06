@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fridge(Counter)
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 35b598a55ef3da9479c598ccc4697e9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 35b598a55ef3da9479c598ccc4697e9d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -972,7 +976,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 204937302}
           m_TargetAssemblyTypeName: ObjectSelector, Assembly-CSharp
-          m_MethodName: ReleaseDown
+          m_MethodName: OnDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1001,7 +1005,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 204937302}
           m_TargetAssemblyTypeName: ObjectSelector, Assembly-CSharp
-          m_MethodName: OnDown
+          m_MethodName: ReleaseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2395,7 +2399,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 204937302}
           m_TargetAssemblyTypeName: ObjectSelector, Assembly-CSharp
-          m_MethodName: OnUp
+          m_MethodName: ReleaseUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2506,7 +2510,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 204937302}
           m_TargetAssemblyTypeName: ObjectSelector, Assembly-CSharp
-          m_MethodName: ReleaseUp
+          m_MethodName: OnUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
